@@ -8,22 +8,21 @@
     "packages": [
         {
             "name": "bojaghi/continy",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojaghi/continy.git",
-                "reference": "14162712886b669c92f7a3f19daa5745dd0d8013"
+                "reference": "0a05dc2cc489b1f88593fb4da50add1e260c6abd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/continy/zipball/14162712886b669c92f7a3f19daa5745dd0d8013",
-                "reference": "14162712886b669c92f7a3f19daa5745dd0d8013",
+                "url": "https://api.github.com/repos/bojaghi/continy/zipball/0a05dc2cc489b1f88593fb4da50add1e260c6abd",
+                "reference": "0a05dc2cc489b1f88593fb4da50add1e260c6abd",
                 "shasum": ""
             },
             "require": {
                 "bojaghi/contract": "^1.0",
-                "php": ">=8.0",
-                "psr/container": "^2.0"
+                "php": ">=8.0"
             },
             "require-dev": {
                 "bojaghi/wp-tests": "^1.0",
@@ -46,30 +45,31 @@
                     "email": "ep6tri@hotmail.com"
                 }
             ],
-            "description": "Re-usable tiny container for WordPress themes and plugins. ",
+            "description": "Re-usable tiny container for WordPress themes and plugins.",
             "homepage": "https://github.com/bojaghi/continy",
             "support": {
                 "issues": "https://github.com/bojaghi/continy/issues",
-                "source": "https://github.com/bojaghi/continy/tree/1.0.0"
+                "source": "https://github.com/bojaghi/continy/tree/1.1.0"
             },
-            "time": "2024-10-26T14:41:39+00:00"
+            "time": "2024-12-24T18:52:39+00:00"
         },
         {
             "name": "bojaghi/contract",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojaghi/contract.git",
-                "reference": "884f3e340d8cffc8bec4ca627f5a5c096ee5c503"
+                "reference": "6d0fd73087a7f36cea92fee0c110af0916f5f1db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/contract/zipball/884f3e340d8cffc8bec4ca627f5a5c096ee5c503",
-                "reference": "884f3e340d8cffc8bec4ca627f5a5c096ee5c503",
+                "url": "https://api.github.com/repos/bojaghi/contract/zipball/6d0fd73087a7f36cea92fee0c110af0916f5f1db",
+                "reference": "6d0fd73087a7f36cea92fee0c110af0916f5f1db",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0"
+                "php": ">=8.0",
+                "psr/container": "^2.0"
             },
             "type": "library",
             "autoload": {
@@ -91,9 +91,9 @@
             "homepage": "https://github.com/bojaghi/contract",
             "support": {
                 "issues": "https://github.com/bojaghi/contract/issues",
-                "source": "https://github.com/bojaghi/contract/tree/1.0.1"
+                "source": "https://github.com/bojaghi/contract/tree/1.1.0"
             },
-            "time": "2024-11-27T10:33:39+00:00"
+            "time": "2024-12-21T04:43:53+00:00"
         },
         {
             "name": "bojaghi/custom-posts",
@@ -223,6 +223,52 @@
             "time": "2024-12-01T17:51:59+00:00"
         },
         {
+            "name": "bojaghi/helper",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bojaghi/helper.git",
+                "reference": "e84223e627e5f86e6e4b1986f42b506c22071e82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojaghi/helper/zipball/e84223e627e5f86e6e4b1986f42b506c22071e82",
+                "reference": "e84223e627e5f86e6e4b1986f42b506c22071e82",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "bojaghi/wp-tests": "^1.0",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bojaghi\\Helper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "changwoo",
+                    "email": "ep6tri@hotmail.com"
+                }
+            ],
+            "description": "Helper methods collection.",
+            "homepage": "https://github.com/bojaghi/helper",
+            "support": {
+                "issues": "https://github.com/bojaghi/helper/issues",
+                "source": "https://github.com/bojaghi/helper/tree/1.1.0"
+            },
+            "time": "2024-12-19T01:41:49+00:00"
+        },
+        {
             "name": "bojaghi/template",
             "version": "1.0.0",
             "source": {
@@ -270,19 +316,20 @@
         },
         {
             "name": "bojaghi/vite-scripts",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojaghi/vite-scripts.git",
-                "reference": "1c24b5944a92694903e6c910f55a776797181a6f"
+                "reference": "9f3b4f4b782d73b939f64ebf86bef1adddd2bf8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/vite-scripts/zipball/1c24b5944a92694903e6c910f55a776797181a6f",
-                "reference": "1c24b5944a92694903e6c910f55a776797181a6f",
+                "url": "https://api.github.com/repos/bojaghi/vite-scripts/zipball/9f3b4f4b782d73b939f64ebf86bef1adddd2bf8d",
+                "reference": "9f3b4f4b782d73b939f64ebf86bef1adddd2bf8d",
                 "shasum": ""
             },
             "require": {
+                "bojaghi/helper": "^1.1",
                 "php": ">=8.0"
             },
             "require-dev": {
@@ -303,9 +350,9 @@
             "homepage": "https://github.com/bojaghi/vite-scripts",
             "support": {
                 "issues": "https://github.com/bojaghi/vite-scripts/issues",
-                "source": "https://github.com/bojaghi/vite-scripts/tree/1.0.0"
+                "source": "https://github.com/bojaghi/vite-scripts/tree/1.1.0"
             },
-            "time": "2024-11-23T01:55:36+00:00"
+            "time": "2025-01-14T15:56:58+00:00"
         },
         {
             "name": "psr/container",
