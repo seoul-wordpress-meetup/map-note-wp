@@ -17,4 +17,9 @@ export default defineConfig({
   },
   publicDir: false,
   plugins: [react()],
+  server: {
+    cors: {
+      origin: '*',
+    },
+  },
 })
