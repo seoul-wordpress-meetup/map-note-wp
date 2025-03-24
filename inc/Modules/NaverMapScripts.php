@@ -9,7 +9,7 @@ class NaverMapScripts implements Module
     public function __construct(string $nCloudClientId = '')
     {
         wp_register_script(
-            handle: 'mnp-naver-map',
+            handle: 'map-note-wp-naver-map',
             src: add_query_arg(
                 'ncpClientId',
                 $nCloudClientId,
@@ -25,8 +25,8 @@ class NaverMapScripts implements Module
 
     public function enqueueNaverMap(): void
     {
-        if (!wp_script_is('mnp-naver-map')) {
-            wp_enqueue_script('mnp-naver-map');
+        if (!wp_script_is('map-note-wp-naver-map')) {
+            wp_enqueue_script('map-note-wp-naver-map');
         }
     }
 }
