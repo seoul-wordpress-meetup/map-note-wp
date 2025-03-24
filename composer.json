@@ -5,7 +5,10 @@
   "autoload": {
     "psr-4": {
       "SWM\\MapNoteWP\\": "inc/"
-    }
+    },
+    "files": [
+      "inc/Sanitizers.php"
+    ]
   },
   "autoload-dev": {},
   "require": {
