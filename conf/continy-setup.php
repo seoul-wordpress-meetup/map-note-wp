@@ -18,7 +18,14 @@ return [
         'bojaghi/customFields'     => __DIR__ . '/custom-fields.php',
         'bojaghi/customPosts'      => __DIR__ . '/custom-posts.php',
         'bojaghi/customTaxonomies' => __DIR__ . '/custom-taxonomies.php',
-        'bojaghi/template'         => [['scopes' => [dirname(__DIR__) . '/inc/Templates']]],
+        'bojaghi/template'         => [
+            [
+                'infix'  => 'tmpl',
+                'scopes' => [
+                    dirname(__DIR__) . '/inc/Templates',
+                ],
+            ],
+        ],
         'bojaghi/viteScripts'      => fn(Continy $continy) => [
             [
                 'distBaseUrl'  => plugins_url('dist', $continy->getMain()),
@@ -26,7 +33,14 @@ return [
                 'manifestPath' => plugin_dir_path($continy->getMain()) . 'dist/.vite/manifest.json',
             ]
         ],
-        'mapNote/naverMapScripts'  => [defined('NCLOUD_CLIENT_ID') ? NCLOUD_CLIENT_ID : ''],
+        'mapNote/naverMapScripts'  => function (Continy $continy) {
+            $clientId = defined('NCLOUD_CLIENT_ID') ? NCLOUD_CLIENT_ID : '';
+            if (!$clientId) {
+                $setup    = $continy->get('mapNote/options')->map_note_wp->get();
+                $clientId = $setup['client_id'] ?? '';
+            }
+            return $clientId;
+        },
         'mapNote/options'          => __DIR__ . '/options.php',
     ],
     'bindings'  => [
