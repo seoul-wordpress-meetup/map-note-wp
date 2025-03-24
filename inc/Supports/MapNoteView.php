@@ -18,6 +18,7 @@ class MapNoteView implements View
     {
         $this->templateRedirect->prepareBlankTemplate();
         $this->templateRedirect->enqueueNaverMaps();
-        include __DIR__ . '/../Templates/app-template.tmpl.php';
+
+        echo mapNoteTmpl('app-template'); // TODO: KSES
     }
 }
