@@ -62,7 +62,7 @@ if (!function_exists('mapNoteTmpl')) {
     function mapNoteTmpl(string $tmplName, array $context = []): string
     {
         $output = '';
-        $tmpl   = mapNoteGet('template');
+        $tmpl   = mapNoteGet('bojaghi/template');
 
         if ($tmpl) {
             /** @var Template $tmpl */
