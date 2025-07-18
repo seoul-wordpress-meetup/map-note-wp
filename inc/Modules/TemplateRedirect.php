@@ -24,7 +24,7 @@ class TemplateRedirect implements Module
     public function templateRedirect(): void
     {
         if (($post = get_post()) && $this->mapPage === $post->ID) {
-            mapNoteGet(MapNoteView::class)->display();
+            mapNoteWpGet(MapNoteView::class)->display();
             exit;
         }
     }

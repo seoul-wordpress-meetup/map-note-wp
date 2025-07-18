@@ -8,13 +8,15 @@ if (!defined('ABSPATH')) {
 }
 
 return [
-    'main_file' => dirname(__DIR__) . '/map-note-wp.php',
-    'version'   => '0.0.0',
+    'main_file' => MAP_NOTE_MAIN,
+    'version'   => MAP_NOTE_VERSION,
     'hooks'     => [
         'admin_init' => 0,
+        'admin_menu' => 0,
         'init'       => 0,
     ],
     'arguments' => [
+        'bojaghi/adminMenus'       => __DIR__ . '/admin-menus.php',
         'bojaghi/customFields'     => __DIR__ . '/custom-fields.php',
         'bojaghi/customPosts'      => __DIR__ . '/custom-posts.php',
         'bojaghi/customTaxonomies' => __DIR__ . '/custom-taxonomies.php',
@@ -31,7 +33,7 @@ return [
                 'distBaseUrl'  => plugins_url('dist', $continy->getMain()),
                 'isProd'       => false,
                 'manifestPath' => plugin_dir_path($continy->getMain()) . 'dist/.vite/manifest.json',
-            ]
+            ],
         ],
         'mapNote/naverMapScripts'  => function (Continy $continy) {
             $clientId = defined('NCLOUD_CLIENT_ID') ? NCLOUD_CLIENT_ID : '';
@@ -45,12 +47,13 @@ return [
     ],
     'bindings'  => [
         // Bojaghi vendors
+        'bojaghi/adminMenus'       => Bojaghi\AdminMenus\AdminMenus::class,
         'bojaghi/customFields'     => Bojaghi\Fields\Modules\CustomFields::class,
-        'bojaghi/customPosts'      => Bojaghi\Cpt\CustomPosts::class,
+        'bojaghi/customPosts'      => Bojaghi\CustomPosts\CustomPosts::class,
         'bojaghi/customTaxonomies' => Bojaghi\Tax\CustomTaxonomies::class,
         'bojaghi/template'         => Bojaghi\Template\Template::class,
         'bojaghi/viteScripts'      => Bojaghi\ViteScripts\ViteScript::class,
-        // In-house modules
+        // Plugin modules
         'mapNote/admin/Post'       => Modules\Admin\Post::class,
         'mapNote/admin/Settings'   => Modules\Admin\Settings::class,
         'mapNote/kses'             => Modules\KSES::class,
@@ -64,6 +67,11 @@ return [
                 'mapNote/admin/Post',
             ],
         ],
+        'admin_menu' => [
+            Continy::PR_DEFAULT => [
+                'bojaghi/adminMenus',
+            ],
+        ],
         'init'       => [
             Continy::PR_HIGH    => [
                 'bojaghi/template',
@@ -74,11 +82,11 @@ return [
                 'bojaghi/customFields',
                 'bojaghi/customPosts',
                 'bojaghi/customTaxonomies',
-                'mapNote/admin/Settings',
+                // 'mapNote/admin/Settings',
                 'mapNote/kses',
                 'mapNote/options',
                 'mapNote/templateRedirect',
             ],
-        ]
+        ],
     ],
 ];

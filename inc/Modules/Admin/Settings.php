@@ -19,12 +19,12 @@ class Settings implements Module
             _x('Map Note Settings', 'Settings menu title', 'map-note-wp'),
             'manage_options',
             SettingsView::PAGE_SLUG,
-            [$this, 'outputSettings'],
+
         );
     }
 
     public function outputSettings(): void
     {
-        mapNoteGet(SettingsView::class)->display();
+        mapNoteWpGet(SettingsView::class)->display();
     }
 }

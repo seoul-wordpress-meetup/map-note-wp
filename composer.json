@@ -7,7 +7,8 @@
       "SWM\\MapNoteWP\\": "inc/"
     },
     "files": [
-      "inc/Sanitizers.php"
+      "inc/Sanitizers.php",
+      "inc/functions.php"
     ]
   },
   "autoload-dev": {},
@@ -18,7 +19,8 @@
     "bojaghi/custom-posts": "^1.0",
     "bojaghi/custom-taxonomies": "^1.0",
     "bojaghi/fields": "^1.0",
-    "bojaghi/template": "^1.0"
+    "bojaghi/template": "^1.0",
+    "bojaghi/admin-menus": "^1.0"
   },
   "version": "0.0.0",
   "minimum-stability": "stable"

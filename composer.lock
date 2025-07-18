@@ -4,27 +4,78 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c589f39c32e5553b1aef19f6d8600f69",
+    "content-hash": "9ce9b18f204815c7b22eb9e2312b16ee",
     "packages": [
         {
-            "name": "bojaghi/continy",
-            "version": "1.1.0",
+            "name": "bojaghi/admin-menus",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bojaghi/continy.git",
-                "reference": "0a05dc2cc489b1f88593fb4da50add1e260c6abd"
+                "url": "https://github.com/bojaghi/admin-menus.git",
+                "reference": "67f4a46841ded4681072a34ab5b87426fbb48235"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/continy/zipball/0a05dc2cc489b1f88593fb4da50add1e260c6abd",
-                "reference": "0a05dc2cc489b1f88593fb4da50add1e260c6abd",
+                "url": "https://api.github.com/repos/bojaghi/admin-menus/zipball/67f4a46841ded4681072a34ab5b87426fbb48235",
+                "reference": "67f4a46841ded4681072a34ab5b87426fbb48235",
                 "shasum": ""
             },
             "require": {
-                "bojaghi/contract": "^1.0",
+                "bojaghi/contract": "^1.1",
+                "bojaghi/helper": "^1.2",
                 "php": ">=8.0"
             },
             "require-dev": {
+                "bojaghi/dictionary": "^1.0",
+                "bojaghi/wp-tests": "^1.1",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bojaghi\\AdminMenus\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "changwoo",
+                    "email": "ep6tri@hotmail.com",
+                    "homepage": "https://blog.changwoo.pe.kr"
+                }
+            ],
+            "description": "WP admin menu setup wrapper",
+            "homepage": "https://github.com/bojaghi/admin-menus",
+            "support": {
+                "issues": "https://github.com/bojaghi/admin-menus/issues",
+                "source": "https://github.com/bojaghi/admin-menus/tree/1.0.3"
+            },
+            "time": "2025-07-18T10:45:35+00:00"
+        },
+        {
+            "name": "bojaghi/continy",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bojaghi/continy.git",
+                "reference": "e64de9b4d745026fcb0ec1ca3c58414b9ff05b88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojaghi/continy/zipball/e64de9b4d745026fcb0ec1ca3c58414b9ff05b88",
+                "reference": "e64de9b4d745026fcb0ec1ca3c58414b9ff05b88",
+                "shasum": ""
+            },
+            "require": {
+                "bojaghi/contract": "^1.3",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "bojaghi/dictionary": "^1.0",
                 "bojaghi/wp-tests": "^1.0",
                 "phpunit/phpunit": "^9",
                 "yoast/phpunit-polyfills": "^3.0"
@@ -49,27 +100,30 @@
             "homepage": "https://github.com/bojaghi/continy",
             "support": {
                 "issues": "https://github.com/bojaghi/continy/issues",
-                "source": "https://github.com/bojaghi/continy/tree/1.1.0"
+                "source": "https://github.com/bojaghi/continy/tree/1.2.3"
             },
-            "time": "2024-12-24T18:52:39+00:00"
+            "time": "2025-07-14T15:50:18+00:00"
         },
         {
             "name": "bojaghi/contract",
-            "version": "1.1.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojaghi/contract.git",
-                "reference": "6d0fd73087a7f36cea92fee0c110af0916f5f1db"
+                "reference": "28b57b4b66e209d0f869a70000ae49e6007ae539"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/contract/zipball/6d0fd73087a7f36cea92fee0c110af0916f5f1db",
-                "reference": "6d0fd73087a7f36cea92fee0c110af0916f5f1db",
+                "url": "https://api.github.com/repos/bojaghi/contract/zipball/28b57b4b66e209d0f869a70000ae49e6007ae539",
+                "reference": "28b57b4b66e209d0f869a70000ae49e6007ae539",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0",
                 "psr/container": "^2.0"
+            },
+            "require-dev": {
+                "bojaghi/dictionary": "^1.0"
             },
             "type": "library",
             "autoload": {
@@ -91,22 +145,22 @@
             "homepage": "https://github.com/bojaghi/contract",
             "support": {
                 "issues": "https://github.com/bojaghi/contract/issues",
-                "source": "https://github.com/bojaghi/contract/tree/1.1.0"
+                "source": "https://github.com/bojaghi/contract/tree/1.3.0"
             },
-            "time": "2024-12-21T04:43:53+00:00"
+            "time": "2025-07-14T06:17:53+00:00"
         },
         {
             "name": "bojaghi/custom-posts",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojaghi/custom-posts.git",
-                "reference": "018219acceeb6f638173a73e71954c0b7ddc696f"
+                "reference": "1d5c35f944655b5e77c2dcc7f6714f1521f8f5d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/custom-posts/zipball/018219acceeb6f638173a73e71954c0b7ddc696f",
-                "reference": "018219acceeb6f638173a73e71954c0b7ddc696f",
+                "url": "https://api.github.com/repos/bojaghi/custom-posts/zipball/1d5c35f944655b5e77c2dcc7f6714f1521f8f5d2",
+                "reference": "1d5c35f944655b5e77c2dcc7f6714f1521f8f5d2",
                 "shasum": ""
             },
             "require": {
@@ -120,7 +174,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Bojaghi\\Cpt\\": "src/"
+                    "Bojaghi\\CustomPosts\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -131,9 +185,9 @@
             "homepage": "https://github.com/bojaghi/custom-posts",
             "support": {
                 "issues": "https://github.com/bojaghi/custom-posts/issues",
-                "source": "https://github.com/bojaghi/custom-posts/tree/1.0.1"
+                "source": "https://github.com/bojaghi/custom-posts/tree/1.0.2"
             },
-            "time": "2024-11-24T14:46:49+00:00"
+            "time": "2025-04-19T18:38:39+00:00"
         },
         {
             "name": "bojaghi/custom-taxonomies",
@@ -223,20 +277,67 @@
             "time": "2024-12-01T17:51:59+00:00"
         },
         {
-            "name": "bojaghi/helper",
-            "version": "1.1.0",
+            "name": "bojaghi/fields-render",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bojaghi/helper.git",
-                "reference": "e84223e627e5f86e6e4b1986f42b506c22071e82"
+                "url": "https://github.com/bojaghi/fields-render.git",
+                "reference": "fea34acfe574f13fc1dd10aab67e0bbd2c7cdda8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/helper/zipball/e84223e627e5f86e6e4b1986f42b506c22071e82",
-                "reference": "e84223e627e5f86e6e4b1986f42b506c22071e82",
+                "url": "https://api.github.com/repos/bojaghi/fields-render/zipball/fea34acfe574f13fc1dd10aab67e0bbd2c7cdda8",
+                "reference": "fea34acfe574f13fc1dd10aab67e0bbd2c7cdda8",
                 "shasum": ""
             },
             "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "bojaghi/wp-tests": "^1.0",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bojaghi\\FieldsRender\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "changwoo",
+                    "email": "ep6tri@hotmail.com"
+                }
+            ],
+            "description": "HTML widget helper for PHP server-side ",
+            "homepage": "https://github.com/bojaghi/fields-render",
+            "support": {
+                "issues": "https://github.com/bojaghi/fields-render/issues",
+                "source": "https://github.com/bojaghi/fields-render/tree/1.0.7"
+            },
+            "time": "2025-07-11T00:45:04+00:00"
+        },
+        {
+            "name": "bojaghi/helper",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bojaghi/helper.git",
+                "reference": "aeb93cbca25f80fc4e85ed09d2c513768a195c09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojaghi/helper/zipball/aeb93cbca25f80fc4e85ed09d2c513768a195c09",
+                "reference": "aeb93cbca25f80fc4e85ed09d2c513768a195c09",
+                "shasum": ""
+            },
+            "require": {
+                "bojaghi/contract": "^1.3",
                 "php": ">=8.0"
             },
             "require-dev": {
@@ -264,25 +365,26 @@
             "homepage": "https://github.com/bojaghi/helper",
             "support": {
                 "issues": "https://github.com/bojaghi/helper/issues",
-                "source": "https://github.com/bojaghi/helper/tree/1.1.0"
+                "source": "https://github.com/bojaghi/helper/tree/1.4.2"
             },
-            "time": "2024-12-19T01:41:49+00:00"
+            "time": "2025-07-18T10:35:56+00:00"
         },
         {
             "name": "bojaghi/template",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojaghi/template.git",
-                "reference": "48268cccc646a92c36ea027885616ac9890525c5"
+                "reference": "cd204d6b608d7df8036949d903633daf35d97348"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/template/zipball/48268cccc646a92c36ea027885616ac9890525c5",
-                "reference": "48268cccc646a92c36ea027885616ac9890525c5",
+                "url": "https://api.github.com/repos/bojaghi/template/zipball/cd204d6b608d7df8036949d903633daf35d97348",
+                "reference": "cd204d6b608d7df8036949d903633daf35d97348",
                 "shasum": ""
             },
             "require": {
+                "bojaghi/helper": "^1.1",
                 "php": ">=8.0"
             },
             "require-dev": {
@@ -310,25 +412,26 @@
             "homepage": "https://github.com/bojaghi/template",
             "support": {
                 "issues": "https://github.com/bojaghi/template/issues",
-                "source": "https://github.com/bojaghi/template/tree/1.0.0"
+                "source": "https://github.com/bojaghi/template/tree/1.0.1"
             },
-            "time": "2024-11-29T22:40:37+00:00"
+            "time": "2025-05-10T03:02:45+00:00"
         },
         {
             "name": "bojaghi/vite-scripts",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojaghi/vite-scripts.git",
-                "reference": "9f3b4f4b782d73b939f64ebf86bef1adddd2bf8d"
+                "reference": "12ec422a7bc560072150f0d6281b630bf61e164c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/vite-scripts/zipball/9f3b4f4b782d73b939f64ebf86bef1adddd2bf8d",
-                "reference": "9f3b4f4b782d73b939f64ebf86bef1adddd2bf8d",
+                "url": "https://api.github.com/repos/bojaghi/vite-scripts/zipball/12ec422a7bc560072150f0d6281b630bf61e164c",
+                "reference": "12ec422a7bc560072150f0d6281b630bf61e164c",
                 "shasum": ""
             },
             "require": {
+                "bojaghi/fields-render": "^1.0",
                 "bojaghi/helper": "^1.1",
                 "php": ">=8.0"
             },
@@ -350,9 +453,9 @@
             "homepage": "https://github.com/bojaghi/vite-scripts",
             "support": {
                 "issues": "https://github.com/bojaghi/vite-scripts/issues",
-                "source": "https://github.com/bojaghi/vite-scripts/tree/1.1.0"
+                "source": "https://github.com/bojaghi/vite-scripts/tree/1.2.0"
             },
-            "time": "2025-01-14T15:56:58+00:00"
+            "time": "2025-05-20T22:44:31+00:00"
         },
         {
             "name": "psr/container",

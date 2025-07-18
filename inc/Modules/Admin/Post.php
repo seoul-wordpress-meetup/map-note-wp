@@ -18,7 +18,7 @@ class Post implements Module
                 id: 'swm-edit-map-place',
                 title: __('Place Map', 'map-note-wp'),
                 callback: function () {
-                    mapNoteGet(\SWM\MapNoteWP\Supports\Admin\MetaBox\Place::class)->displayMetaBox();
+                    mapNoteWpGet(\SWM\MapNoteWP\Supports\Admin\MetaBox\Place::class)->displayMetaBox();
                 },
             );
         }
